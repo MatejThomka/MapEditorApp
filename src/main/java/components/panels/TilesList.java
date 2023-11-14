@@ -14,6 +14,7 @@ public class TilesList extends JPanel {
     setLayout(cardLayout);
     setBackground(Color.BLACK);
     this.cardLayout.show(this, String.valueOf(currentPanel));
+    initTilesList();
   }
 
   public GridBagConstraints positionOnMainFrame() {
@@ -25,5 +26,17 @@ public class TilesList extends JPanel {
     gbc.anchor = GridBagConstraints.NORTHWEST;
     gbc.insets.set(0,5,5,5);
     return gbc;
+  }
+
+  public void initTilesList() {
+    removeAll();
+
+    int index = 0;
+
+    for (int i = 0; i < list.length; i++) {
+      list[i] = new Tiles();
+      add(list[i], String.valueOf(i));
+
+    }
   }
 }
