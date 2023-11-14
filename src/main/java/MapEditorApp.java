@@ -1,4 +1,5 @@
 import components.panels.Editor;
+import components.panels.Minimap;
 import java.awt.Color;
 import java.awt.GridBagLayout;
 import javax.swing.JFrame;
@@ -6,6 +7,7 @@ import javax.swing.JFrame;
 public class MapEditorApp extends JFrame {
 
   Editor editor = new Editor();
+  Minimap minimap = new Minimap();
 
   public MapEditorApp() {
     setTitle("Map Editor v0.0.2");
@@ -17,7 +19,7 @@ public class MapEditorApp extends JFrame {
     getContentPane().setBackground(Color.DARK_GRAY);
 
     add(editor, editor.positionOnMainFrame());
-
+    add(minimap, minimap.positionOnMainFrame());
 
     pack();
     setVisible(true);
