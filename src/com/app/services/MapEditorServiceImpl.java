@@ -3,6 +3,7 @@ package com.app.services;
 import com.app.components.panels.Editor;
 import com.app.components.panels.Minimap;
 import com.app.components.panels.TilesList;
+import com.app.components.panels.buttons.Fill;
 import com.app.components.panels.buttons.Next;
 import com.app.components.panels.buttons.Previous;
 import com.app.graphic.ImageManager;
@@ -17,6 +18,7 @@ public class MapEditorServiceImpl implements MapEditorService {
   private final TilesList tilesList;
   private final Next next;
   private final Previous previous;
+  private final Fill fill;
 
 
   @Override
@@ -42,5 +44,10 @@ public class MapEditorServiceImpl implements MapEditorService {
   @Override
   public Previous placePrevious() {
     return previous;
+  }
+
+  @Override
+  public Fill placeFill() {
+    return fill;
   }
 }
