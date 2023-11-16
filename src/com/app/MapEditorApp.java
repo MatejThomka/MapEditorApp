@@ -24,7 +24,7 @@ public class MapEditorApp extends JFrame {
   private final Previous previous = new Previous(imageManager);
   private final Fill fill = new Fill(imageManager);
 
-  private final MapEditorService service = new MapEditorServiceImpl(imageManager, editor, minimap, tilesList, next, previous, fill);
+  private final MapEditorService service = new MapEditorServiceImpl(editor, minimap, tilesList, next, previous, fill);
 
   public MapEditorApp() {
     setTitle("Map Editor v0.0.2");
