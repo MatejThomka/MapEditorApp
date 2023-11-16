@@ -1,4 +1,4 @@
-package components.panels;
+package com.app.components.panels;
 
 import java.awt.CardLayout;
 import java.awt.Color;
