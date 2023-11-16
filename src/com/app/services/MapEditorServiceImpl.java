@@ -6,13 +6,11 @@ import com.app.components.panels.TilesList;
 import com.app.components.panels.buttons.Fill;
 import com.app.components.panels.buttons.Next;
 import com.app.components.panels.buttons.Previous;
-import com.app.graphic.ImageManager;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class MapEditorServiceImpl implements MapEditorService {
 
-  private final ImageManager imageManager;
   private final Editor editor;
   private final Minimap minimap;
   private final TilesList tilesList;
