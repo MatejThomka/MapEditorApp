@@ -4,7 +4,7 @@ import com.app.components.panels.map.Map;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class TilesMapServiceImpl implements TilesListService {
+public class TilesListServiceImpl implements TilesListService {
 
   Map map;
   @Override
