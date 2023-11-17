@@ -1,8 +1,8 @@
 package com.app.services;
 
-import com.app.components.panels.map.Map;
+import com.app.components.panels.Tiles;
 
 public interface TilesListService {
 
-  Map placeMap();
+  Tiles placeTiles();
 }

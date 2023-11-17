@@ -1,14 +1,15 @@
 package com.app.services;
 
-import com.app.components.panels.map.Map;
+import com.app.components.panels.Tiles;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class TilesListServiceImpl implements TilesListService {
 
-  Map map;
+  Tiles[] tiles;
+
   @Override
-  public Map placeMap() {
-    return map;
+  public Tiles placeTiles() {
+    return null;
   }
 }
