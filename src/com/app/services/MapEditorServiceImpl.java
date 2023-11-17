@@ -19,7 +19,7 @@ public class MapEditorServiceImpl implements MapEditorService {
   private final Next next = new Next(imageManager);
   private final Previous previous = new Previous(imageManager);
   private final Fill fill = new Fill(imageManager);
-  private final TilesListService tls = new TilesMapServiceImpl();
+  private final TilesListService tls = new TilesListServiceImpl();
 
 
   @Override
