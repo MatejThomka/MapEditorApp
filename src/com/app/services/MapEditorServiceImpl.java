@@ -6,17 +6,20 @@ import com.app.components.panels.TilesList;
 import com.app.components.panels.buttons.Fill;
 import com.app.components.panels.buttons.Next;
 import com.app.components.panels.buttons.Previous;
+import com.app.graphic.ImageManager;
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 public class MapEditorServiceImpl implements MapEditorService {
 
-  private final Editor editor;
-  private final Minimap minimap;
-  private final TilesList tilesList;
-  private final Next next;
-  private final Previous previous;
-  private final Fill fill;
+  private final ImageManager imageManager = new ImageManager();
+  private final Editor editor = new Editor();
+  private final Minimap minimap = new Minimap();
+  private final TilesList tilesList = new TilesList();
+  private final Next next = new Next(imageManager);
+  private final Previous previous = new Previous(imageManager);
+  private final Fill fill = new Fill(imageManager);
+  private final TilesListService tls = new TilesMapServiceImpl();
 
 
   @Override
@@ -31,6 +34,7 @@ public class MapEditorServiceImpl implements MapEditorService {
 
   @Override
   public TilesList placeTilesList() {
+    tilesList.add(tls.placeMap());
     return tilesList;
   }
 
