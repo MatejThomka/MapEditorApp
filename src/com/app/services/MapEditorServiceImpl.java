@@ -34,7 +34,7 @@ public class MapEditorServiceImpl implements MapEditorService {
 
   @Override
   public TilesList placeTilesList() {
-    tilesList.add(tls.placeMap());
+    tilesList.add(tls.placeTiles());
     return tilesList;
   }
 
