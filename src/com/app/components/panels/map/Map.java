@@ -1,11 +1,14 @@
 package com.app.components.panels.map;
 
-import com.app.graphic.IconManager;
 import javax.swing.*;
 import java.awt.*;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 
 @RequiredArgsConstructor
+@Setter
+@Getter
 public class Map extends JPanel {
 
   private int rows;
